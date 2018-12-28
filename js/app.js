@@ -62,19 +62,20 @@ function Game () {
     };
 
         // Keyboard support
+
     this.turnFurry= function(event) {
         switch (event.which) {
             case 37:
-                this.furry.direction = 'left';
+                self.furry.direction = 'left';
                 break;
             case 39:
-                this.furry.direction = 'right';
+                self.furry.direction = 'right';
                 break;
             case 38:
-                this.furry.direction = 'up';
+                self.furry.direction = 'up';
                 break;
             case 40:
-                this.furry.direction = 'down';
+                self.furry.direction = 'down';
                 break;
         };
     };
@@ -82,7 +83,8 @@ function Game () {
         self.turnFurry(event);
     });
 
-        //getting a point
+
+    //getting a point
     this.checkCoinCollision = function() {
         if (this.coin.x === this.furry.x && this.coin.y===this.furry.y) {
             this.board[this.position(this.coin.x, this.coin.y)].classList.remove('coin');
@@ -115,4 +117,4 @@ var game = new Game();
 game.showCoin();
 game.showFurry();
 game.startGame();
-// document.addEventListener('keydown', game.turnFurry);
+document.addEventListener('keydown', game.turnFurry);
