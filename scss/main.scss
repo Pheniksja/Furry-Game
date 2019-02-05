@@ -1,0 +1,36 @@
+strong {
+  height: 100px;
+  background: rgba(red, 0.6);
+  border: 1px solid red;
+  display: block;
+}
+
+//bootsrtap
+//--------------------------------------------------------
+$gap: 10px;
+$columns: 12;
+$bp: 760px;
+
+.container {
+  padding-left: $gap;
+  padding-right: $gap;
+  .row {
+    margin-left: - $gap;
+    margin-right: - 10$gap;
+
+    [class*='col-'] {
+      padding-left: $gap;
+      padding-right: $gap;
+      padding-bottom: 2*$gap;
+    }
+    @media (min-width: $bp) {
+      display: flex;
+
+      @for $i from 1 through $columns {
+        .col-#{$i}-#{$columns} { //.col-1-12, .col-2-12 itp
+          width: percentage( ( 100 / $columns * $i)); //* 1%;
+        }
+      }
+    }
+  }
+}

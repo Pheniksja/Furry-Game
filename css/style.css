@@ -17,8 +17,8 @@ section#score {
   margin: 1em auto;
 }
 
-#board  > div {    
-  border: 1px solid black;
+#board>div {
+  border: 1px solid blueviolet;
   float: left;
   width: 64px;
   height: 64px;
@@ -36,8 +36,6 @@ section#score div {
   box-shadow: 1px 1px 5px 1px lightgray;
   margin: 1em auto;
 }
-
-
 
 
 .furry {
@@ -73,4 +71,8 @@ section#over pre {
 
 .invisible {
   display: none;
+}
+
+alert {
+  font-size: 80px;
 }
