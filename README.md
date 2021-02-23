@@ -7,4 +7,4 @@ When a player hits the wall, the game ends and is showing the alert with the ins
 To programming that game, I used HTML, CSS and JavaScipt (like constructor function, move with arrow). 
 
 
-Preview:  https://pheniksja.github.io/Furry_Game/
+Preview: https://k-madalinska.github.io/FurryGame/
